@@ -8,7 +8,7 @@ func numGenerator(ch chan<- int) {
 	}
 
 }
- int, ch1 chan<- int, prime int) {
+func primeChecker(ch <-chan int, ch1 chan<- int, prime int) {
 	for {
 		val := <-ch
 		if val%prime != 0 {
