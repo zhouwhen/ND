@@ -47,6 +47,7 @@ func (c Circle) Perimeter() float64 {
 	return 2 * 3.14 * c.Radius
 }
 
+//
 func main() {
 	for _, shape := range []Shape{Square{Side: 5}, Rectangle{Width: 4, Height: 6}, Circle{Radius: 3}} {
 		fmt.Printf("Shape: %T, Area: %.2f, Perimeter: %.2f\n", shape, shape.Area(), shape.Perimeter())
